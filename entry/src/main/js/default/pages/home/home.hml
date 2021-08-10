@@ -1,0 +1,12 @@
+<element name="swiper-list"  src="../../common/components/swiper/swiper"></element>
+<element name="recommended-list"  src="../../common/components/list/list"></element>
+
+<div class="home-container">
+    <list @scrollbottom="onscroll">
+        <list-item style="flex-direction: column; align-items: center;" >
+            <swiper-list swiper_list="{{ swiper_list }}"></swiper-list>
+            <recommended-list shop_list="{{ shop_list }}"></recommended-list>
+            <progress class="min-progress" type="circular"></progress>
+        </list-item>
+    </list>
+</div>

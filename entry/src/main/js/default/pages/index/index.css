@@ -1,0 +1,71 @@
+.container {
+    flex-direction: column;
+}
+.tabs {
+    width: 100%;
+}
+
+.tab-bar {
+    height: 50px;
+    border-top: 1px solid #ccc;
+}
+.tab-text {
+    width: 300px;
+    text-align: center;
+}
+.tab-item {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tab-item image {
+    width: 22px;
+    height: 22px;
+}
+.tab-item text {
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (device-type: wearable) {
+    .title {
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: tv) {
+    .container {
+        background-image: url("../../common/images/Wallpaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .title {
+        font-size: 100px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: phone) and (orientation: landscape) {
+    .title {
+        font-size: 60px;
+    }
+}

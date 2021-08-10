@@ -1,0 +1,31 @@
+{
+  "Strings": {
+    "componentName": {
+      "login": "User entry table",
+      "registered": "User registration"
+    },
+    "phone": "phone",
+    "gender": "gender",
+    "male": "male",
+    "female": "female",
+    "userName": "user name",
+    "userPhonePromt": "please enter your mobile phone number",
+    "date": "date",
+    "hobby": "hobby",
+    "basketball": "basketball",
+    "badminton": "badminton",
+    "football": "football",
+    "register": "register",
+
+    "name_null": "user phone is null",
+    "name_format": "format of the phone number is incorrect",
+    "gender_null": "gender is null",
+    "date_null": "date is null",
+    "hobby_null": "hobby is null",
+
+    "back": "back",
+    "success": "success"
+  },
+  "Files": {
+  }
+}

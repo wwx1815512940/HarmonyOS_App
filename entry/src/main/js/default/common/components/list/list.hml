@@ -1,0 +1,11 @@
+<div class="list-container">
+    <div class="list-item" for="{{ v in shop_list}}" tid="v.id"  >
+        <image class="cover" src="{{ v.picUrlPath }}"
+               object-fit="cover"></image>
+        <text class="name">{{v.productName}}</text>
+        <div class="price" >
+            <text class="newPrice" >￥{{ v.price }}</text>
+            <text class="price" >￥{{ v.lineationPrice }}</text>
+        </div>
+    </div>
+</div>

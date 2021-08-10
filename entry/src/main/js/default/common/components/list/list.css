@@ -1,0 +1,33 @@
+.list-container {
+    width: 100%;
+    padding: 12px 16px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.list-item {
+    flex-direction: column;
+    width: 49%;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.cover {
+    height: 168px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.name {
+    font-size: 14px;
+    margin: 8px;
+}
+.newPrice {
+    color: #FF6815;
+    font-size: 17px;
+    margin: 0 8px;
+}
+.price {
+    color: #7F7F7F;
+    font-size: 14px;
+    text-decoration: line-through;
+}

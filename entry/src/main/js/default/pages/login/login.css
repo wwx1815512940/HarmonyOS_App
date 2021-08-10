@@ -1,0 +1,63 @@
+@import "../../common/css/common.css";
+.tab-bar {
+    width: 160px;
+    height: 120px;
+}
+
+.page-title{
+    padding: 0 10px;
+    height: 100%;
+    color: #bbbbbb;
+    text-align: center;
+}
+
+.login-container {
+    flex: 1;
+    flex-direction: column;
+}
+
+.item-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.item-title {
+    width: 30%;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #aaaaaa;
+    text-align: left;
+}
+
+.item-content {
+    justify-content: center;
+    text-align: left;
+}
+.item-input {
+    padding: 0 32px;
+    justify-content: space-between;
+}
+.btn-text {
+    width: 208px;
+    padding: 12px 0;
+}
+
+.input-text {
+    width: 450px;
+}
+
+.select{
+/*    justify-content: center;*/
+    text-align: right;
+}
+
+.button-container{
+    width: 100%;
+    height: 150px;
+}
+.btn{
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    text-align: center;
+}

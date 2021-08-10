@@ -1,0 +1,7 @@
+<div class="swiper-container" >
+    <swiper class="swiper" id="swiper" autoplay="true" interval="5000"   index="0" indicator="true" loop="true" digital="false">
+        <div class="swiperContent" for="{{ v in swiper_list}}" tid="v.id" onclick="onClickItem" >
+            <image src="{{ v.imgPathUrl }}" ></image>
+        </div>
+    </swiper>
+</div>

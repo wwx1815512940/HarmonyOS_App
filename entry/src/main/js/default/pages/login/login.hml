@@ -1,0 +1,85 @@
+<div class="login-container">
+    <tabs index="0" vertical="false" onchange="change">
+        <tab-bar class="tab-bar">
+            <text class="page-title">{{ $t('Strings.componentName.login') }}</text>
+            <text class="page-title">{{ $t('Strings.componentName.registered') }}</text>
+        </tab-bar>
+        <tab-content scrollable="true">
+            <div style="flex-direction : column;">
+
+            <!-- username -->
+                <div class="item-container">
+                    <text class="item-title">{{ $t('Strings.phone') }}</text>
+                    <div class="item-content">
+                        <input class="input-text" type="number" value="{{ phone }}"
+                               placeholder="{{ $t('Strings.userPhonePromt') }}"
+                               onchange="getPhone"></input>
+                    </div>
+                </div>
+
+            <!-- code -->
+                <div class="item-container">
+                    <div class="item-input">
+                        <input style="width : 360px;" type="text" value="{{ ver }}"
+                               placeholder="请输入验证码"></input>
+                        <button class="btn-text" disabled="{{ isDis }}" onclick="onSend">{{ text }}</button>
+                    </div>
+                </div>
+
+            <!-- date -->
+                <div class="item-container">
+                    <text class="item-title">{{ $t('Strings.date') }}</text>
+                    <div class="item-content">
+                        <picker type="date" end="2021-08-06" value="{{ date }}"
+                                onchange="getDate"></picker>
+                    </div>
+                </div>
+
+            <!-- gender -->
+                <div class="item-container">
+                    <text class="item-title">{{ $t('Strings.gender') }}</text>
+                    <div class="item-content">
+                        <label target="radio1">{{ $t('Strings.male') }}:</label>
+                        <input id="radio1" type="radio" name="radio" value="{{ $t('Strings.male') }}"
+                               onchange="getMaleGender"
+                               checked="true"></input>
+                        <label target="radio2">{{ $t('Strings.female') }}:</label>
+                        <input id="radio2" type="radio" name="radio" value="{{ $t('Strings.female') }}"
+                               onchange="getFemaleGender">
+                        </input>
+                    </div>
+                </div>
+
+            <!-- hobby -->
+                <div class="item-container">
+                    <text class="item-title">{{ $t('Strings.hobby') }}</text>
+                    <select class="select" onchange="getHobby">
+                        <option value="{{ $t('Strings.basketball') }}" selected="true">{{ $t('Strings.basketball') }}
+                        </option>
+                        <option value="{{ $t('Strings.badminton') }}">{{ $t('Strings.badminton') }}</option>
+                        <option value="{{ $t('Strings.football') }}">{{ $t('Strings.football') }}</option>
+                    </select>
+                </div>
+
+            <!-- login -->
+                <div class="button-container">
+                    <input type="button" class="btn" onclick="onRegiste" value="{{ $t('Strings.register') }}"/>
+                </div>
+            </div>
+            <div style="flex-direction : column;">
+
+            <!-- username -->
+                <div class="item-container">
+                    <text class="item-title">{{ $t('Strings.phone') }}</text>
+                    <div class="item-content">
+                        <input class="input-text" type="text" value="{{ phone }}"
+                               placeholder="{{ $t('Strings.userPhonePromt') }}"
+                               onchange="getPhone"></input>
+                    </div>
+                </div>
+
+            </div>
+        </tab-content>
+    </tabs>
+
+</div>
