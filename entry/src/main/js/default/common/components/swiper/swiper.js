@@ -14,7 +14,6 @@ export default {
         })
     },
      onClickItem() {
-        const res = getItem('TOKEN')
-        console.info('token : ' + res)
+
     }
 }

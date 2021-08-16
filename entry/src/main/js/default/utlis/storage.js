@@ -1,7 +1,5 @@
 import storage from '@system.storage';
 
-var data;
-
 // 存储数据
 export const setItem = (key, value) => {
     storage.set({
@@ -12,18 +10,34 @@ export const setItem = (key, value) => {
     })
 }
 // 获取数据
-export const getItem = key => {
-    storage.get({
-        key,
-        success: res => {
-            data = JSON.parse(res)
-        },
-        fail: err => {
-        }
-    })
+export const getItem = (key, cb) => {
+    console.info('callback : ' + cb)
+    if (cb == undefined) {
+        return storage.get({
+            key,
+            success: res => {
+            },
+            fail: err => {
+            }
+        })
 
+    } else {
+        let data;
 
-    return data
+        storage.get({
+            key,
+            success: res => {
+                data = JSON.parse(res)
+            },
+            fail: err => {
+            }
+        })
+
+        setTimeout(() => {
+            cb && cb(data)
+        }, 100)
+    }
+
 
 }
 

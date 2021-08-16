@@ -1,6 +1,7 @@
 <element name="home"  src="../home/home"></element>
 <element name="user"  src="../user/user"></element>
 <element name="map"  src="../map/map"></element>
+
 <div class="container" >
     <tabs class = "tabs" index="0" vertical="false" onchange="change">
         <tab-content class="tabcontent" scrollable="true">

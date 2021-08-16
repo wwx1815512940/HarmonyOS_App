@@ -60,6 +60,7 @@ export default {
         let res = JSON.parse(results)
 //        数据存储
         setItem('TOKEN', res.data.token)
+        console.info('登录成功!')
 
         prompt.showToast({
             message: res.message,
