@@ -1,0 +1,19 @@
+<element name="home"  src="../home/home"></element>
+<element name="user"  src="../user/user"></element>
+<element name="map"  src="../map/map"></element>
+
+<div class="container" >
+    <tabs class = "tabs" index="0" vertical="false" onchange="change">
+        <tab-content class="tabcontent" scrollable="true">
+           <home></home>
+           <map></map>
+           <user></user>
+        </tab-content>
+        <tab-bar class="tab-bar" mode="fixed">
+            <div class="tab-item" for="{{ (i, v) in tabs}}" tid="id">
+                <image src="{{ i == currentSelected ? v.icon : v.tintIcon }}" ></image>
+                <text>{{ v.title }}</text>
+            </div>
+        </tab-bar>
+    </tabs>
+</div>

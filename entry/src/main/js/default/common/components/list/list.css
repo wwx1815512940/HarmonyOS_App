@@ -21,13 +21,19 @@
     font-size: 28px;
     margin: 16px;
 }
-.newPrice {
-    color: #FF6815;
-    font-size: 34px;
-    margin: 0 16px;
+
+.author {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    padding: 0 16px;
+    color: #9C9C9C;
+    font-size: 24px;
 }
-.price {
-    color: #7F7F7F;
-    font-size: 28px;
-    text-decoration: line-through;
+.author image {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    margin-right: 8px;
 }

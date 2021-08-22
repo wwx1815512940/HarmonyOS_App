@@ -1,0 +1,2 @@
+ERROR in D:/work/HarmonyOS/day1/code/demo/entry/src/main/js/default/common/components/list/list.css
+ The `columns` attribute does not support value `49% 2` (only numbers are supported).	@6:5

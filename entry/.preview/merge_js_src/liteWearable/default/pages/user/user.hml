@@ -1,0 +1,3 @@
+<div>
+    <canvas ref="canvas1" style="width: 100%; height: 150px; background-color: #ffff00;"></canvas>
+</div>
